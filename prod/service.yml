@@ -5,7 +5,7 @@ metadata:
   labels:
     app: lwweb
     app.kubernetes.io/instance: myargoapp1
-  name: lwweb
+    name: lwweb
 spec:
   ports:
   - port: 80
@@ -13,6 +13,6 @@ spec:
     targetPort: 80
   selector:
     app: lwweb
-  type: LoadBalancer
+    type: LoadBalancer
 status:
   loadBalancer: {}
