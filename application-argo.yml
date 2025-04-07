@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: lwwebapp1
+spec:
+  project: default
+  destination:
+    server: https://127.0.0.1:54358
+    namespace: default
+  source:
+    repoURL: https://github.com/KabraJiii/session-6-argocd.git
+    path: prod
+    targetRevision: main
