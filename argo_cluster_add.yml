@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: external-lwc2
+  labels:
+    argocd.argoproj.io/secret-type: cluster
+type: Opaque
+stringData:
+  name: external-lwc2-cluster
+  server: https://127.0.0.1:54358
+  config: |
+    {
+      "bearerToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6InFUY2FmdFdmS25CWEVwTklfejU1MG1PeFFVOUQ2dG84MnJWS3JjZUFBck0ifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNzQ0MDA4MTM3LCJpYXQiOjE3NDQwMDQ1MzcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwianRpIjoiOGU3NzNlNmYtODNiYy00OTE0LTk3NTgtZTBlYzk3Y2NmNzI0Iiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0Iiwic2VydmljZWFjY291bnQiOnsibmFtZSI6InByb2RzYSIsInVpZCI6IjAyNjhiNzA2LTQ2NDAtNDE1Ny1hMTI4LWU0ZTg1MmNkMzc3MyJ9fSwibmJmIjoxNzQ0MDA0NTM3LCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6ZGVmYXVsdDpwcm9kc2EifQ.izW1yvcjhW7JcpunQGUAog5G1PFbzLnnNDMoI6rdc66wllH50UopEE6pwCUX7a1SnVUH6sme0hL3NFMdVxK26nMf9YKYSR7cnXCi3xZ-w5bUfU4hb4CXMIImepXPS3d8dQfn5VLg8XIB1APqcSv90JQGC3hG2Na05pSp9ImYyr2PLNipK-uIS7aHU4idr4a96ExzzjlffowofIav-kEPZWHrtMbc4DLMUB-J2ML77zYo5hSF_GR_W13kB97IFeQ1AHMDBznxzVs-A97GDUf_r3e82FTnh31n5qDI8t3KZclZm8jHlqPk68ez6rYYmYYkr3ZziwyIFfeeG_XKr5K0Aw",
+      "tlsClientCOnfig":
+        {
+        "insecure": true
+        }
+      }
+
