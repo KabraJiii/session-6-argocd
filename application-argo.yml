@@ -5,9 +5,9 @@ metadata:
 spec:
   project: default
   destination:
-    server: https://127.0.0.1:54358
+    server: https://192.168.229.157:8443
     namespace: default
   source:
-    repoURL: https://github.com/KabraJiii/session-6-argocd.git
-    path: prod
-    targetRevision: main
+    repoURL: https://github.com/vimallinuxworld13/argocd_training_2024_code.git
+    path: multienv/staging
+    targetRevision: master
